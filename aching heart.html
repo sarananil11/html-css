@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aching Heart - Poetry by Saran Anil</title>
+    <style>
+        /* Modern reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400&display=swap');
+
+        body {
+            background-color: #1a1a2e;
+            color: #e6e6e6;
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.8;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 0, 128, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(128, 0, 255, 0.05) 0%, transparent 20%);
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        /* Decorative elements */
+        .corner {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .corner-tl {
+            top: 2rem;
+            left: 2rem;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .corner-tr {
+            top: 2rem;
+            right: 2rem;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .corner-bl {
+            bottom: 2rem;
+            left: 2rem;
+            border-right: none;
+            border-top: none;
+        }
+
+        .corner-br {
+            bottom: 2rem;
+            right: 2rem;
+            border-left: none;
+            border-top: none;
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .author-name {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            position: relative;
+            display: inline-block;
+        }
+
+        .author-name::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #e94584, transparent);
+        }
+
+        .poem-title {
+            font-size: 2.2rem;
+            font-weight: 500;
+            font-style: italic;
+            margin: 2rem 0;
+            color: #f8bbd0;
+            position: relative;
+        }
+
+        /* Poem styles */
+        .poem {
+            font-size: 1.4rem;
+            line-height: 2.2;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .poem p {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding: 0 1rem;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+
+        .poem p:hover {
+            opacity: 1;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+
+        .poem p::before {
+            content: '“';
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            font-size: 2rem;
+            color: rgba(233, 69, 132, 0.3);
+        }
+
+        .poem p::after {
+            content: '”';
+            position: absolute;
+            right: -10px;
+            bottom: -20px;
+            font-size: 2rem;
+            color: rgba(233, 69, 132, 0.3);
+        }
+
+        /* Decorative elements */
+        .ink-blot {
+            position: absolute;
+            opacity: 0.03;
+            z-index: -1;
+        }
+
+        .ink-blot-1 {
+            top: 10%;
+            left: 10%;
+            font-size: 15rem;
+            transform: rotate(-15deg);
+        }
+
+        .ink-blot-2 {
+            bottom: 15%;
+            right: 10%;
+            font-size: 12rem;
+            transform: rotate(25deg);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 1px;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .poem p {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .poem p:nth-child(1) { animation-delay: 0.2s; }
+        .poem p:nth-child(2) { animation-delay: 0.4s; }
+        .poem p:nth-child(3) { animation-delay: 0.6s; }
+        .poem p:nth-child(4) { animation-delay: 0.8s; }
+        .poem p:nth-child(5) { animation-delay: 1s; }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .page {
+                padding: 2rem 1rem;
+            }
+            .author-name {
+                font-size: 2rem;
+            }
+            .poem-title {
+                font-size: 1.8rem;
+            }
+            .poem {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        
+        <div class="ink-blot ink-blot-1">✒</div>
+        <div class="ink-blot ink-blot-2">✍️</div>
+
+        <header class="header">
+            <h1 class="author-name">SARAN ANIL</h1>
+            <h2 class="poem-title">Aching Heart</h2>
+        </header>
+
+        <div class="poem">
+            <p>It was all a dream, I guess</p>
+            <p>It suddenly felt through me</p>
+            <p>That voice of hers, sweet vocal cords</p>
+            <p>Made my sleep disturbed</p>
+            
+            <p>It was a sunny day</p>
+            <p>When I fell in love with her</p>
+            <p>Suddenly rain deluged from the sky</p>
+            <p>Never mind, it was my tears</p>
+            
+            <p>She wore her makeup as usual</p>
+            <p>And I wore my "mask" as usual</p>
+            <p>She kissed my cheeks as if it was my funeral</p>
+            <p>Guess what? I couldn't kiss her back</p>
+            
+            <p>She went out to pursue her dreams</p>
+            <p>And here I am, without dreams anymore</p>
+            <p>All my fears have become real</p>
+            <p>Yet she couldn't give a damn about that</p>
+            
+            <p>I opened my computer to start coding</p>
+            <p>She left a message that she'd be going</p>
+            <p>To one of her "friend's" birthday parties</p>
+            <p>Here I am sitting in the room with no company</p>
+            
+            <p>I checked my messages and emails while</p>
+            <p>I drank a cup of coffee</p>
+            <p>I thought she'd bought sugar yesterday</p>
+            <p>Never mind, why blame her for my poor cup of coffee?</p>
+            
+            <p>The sky is the limit, they say</p>
+            <p>I guess there is no limit for heartache</p>
+            <p>The heart is only safe when it is</p>
+            <p>And is not when it actually is</p>
+            
+            <p>I don't even know what I'm thinking</p>
+            <p>Did I mention my girlfriend? I guess I did</p>
+            <p>The love of my life, the soul of my heaven</p>
+            <p>Drank blood from my heart like a raven</p>
+            
+            <p>I opened my phone which she used last night</p>
+            <p>Sandy and she talked a little, I surmised</p>
+            <p>She doesn't even hide it anymore</p>
+            <p>I mean, why anymore? After all of this</p>
+            
+            <p>She came at six when I was sitting on my chair</p>
+            <p>Rotten like an old tomato that stank</p>
+            <p>She screamed at me, God knows why</p>
+            <p>But I get it; after all, I'm her boyfriend on paper, aren't I?</p>
+            
+            <p>I know she knows and she knows I know</p>
+            <p>It was just a matter of time for everything</p>
+            <p>I confronted her, asking about her relationships</p>
+            <p>And she tried to love me more than she ever did</p>
+            
+            <p>Women love their men when they get caught</p>
+            <p>Is it a universal truth or is it just her?</p>
+            <p>Didn't have time to think when she stabbed</p>
+            <p>Into my heart where the love for her belongs</p>
+            
+            <p>It was a 7-inch knife with a clean surface</p>
+            <p>I speculate she was waiting for this "ask me out"</p>
+            <p>I fell to the ground with a loud voice</p>
+            <p>Which was all in my head</p>
+            
+            <p>I woke up fogged with dread</p>
+            <p>She asked what happened in my nightmare</p>
+            <p>I kissed her and made myself a coffee</p>
+            <p>And I saw a beautiful 7-inch clean-surfaced object</p>
+            
+            <p>Tears ran down and my heart started pounding</p>
+            <p>I couldn't remember anything else</p>
+            <p>My heart ached like a monkey shot into space</p>
+            <p>It ached, ached and ached...</p>
+        </div>
+
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <footer class="footer">
+            <p>This original work belongs to sarananilvp2020@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
