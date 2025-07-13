@@ -1,15 +1,15 @@
 body {
-  background: #f0f0f0;
+  background: #e6eae300;
   display: flex;
-  justify-content: center;
+  justify-content: center;   
   align-items: center;
   height: 100vh;
 }
 
 .ball {
-  width: 50px;
-  height: 50px;
-  background: #0bdb1c;
+  width: 70px;
+  height: 70px;
+  background: #3313d5;
   border-radius: 50%;
   position: relative;
   animation: bounce 1s infinite alternate;
