@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Animation Properties</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: tomato;
+      position: relative;
+      animation-name: slide;            /* Name of the animation */
+      animation-duration: .2s;           /* Total time to complete one cycle */
+      animation-timing-function: ease;  /* Speed curve of the animation */
+      animation-delay: 0s;              /* Delay before the animation starts */
+      animation-iteration-count: infinite; /* Number of times the animation repeats */
+      animation-direction: alternate;   /* Direction: normal, reverse, alternate, alternate-reverse */
+      animation-fill-mode: forwards;    /* How styles apply before/after animation (none, forwards, backwards, both) */
+      animation-play-state: running;    /* Can pause/resume animation */
+    }
+
+    @keyframes slide {
+      0% {
+        left: 0;
+        background-color: tomato;
+      }
+      100% {
+        left: 500px;
+        background-color: royalblue;
+      }
+    }
+    body{
+        background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
