@@ -1,0 +1,14 @@
+.rounded-corner {
+  border-radius: 5px;
+  background-color: #130e9c;
+  color: #6aec0d;
+  padding: 10px;
+  font-weight: bold;
+}
+.button {
+  border-radius: 5px;
+  background-color: #130e9c;
+  color: #6aec0d;
+  padding: 10px;
+  font-weight: bold;
+}
