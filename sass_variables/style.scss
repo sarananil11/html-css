@@ -1,0 +1,18 @@
+$maincolor:rgb(245, 189, 20);
+$bgcolor:rgb(116, 8, 8);
+$font-family: 'Courier New', Courier, monospace;
+$font-size: 16px;
+h1{
+    color:$maincolor;
+    background-color:$bgcolor;
+}
+h2{
+    color:$maincolor;
+    background-color:$bgcolor;
+    font-family: $font-family;
+}
+h3{
+    color: $maincolor;
+    font-size: $font-size;
+    font-size: $font-size * 3.2;
+}

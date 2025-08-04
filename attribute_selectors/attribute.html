@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+    }
+    /* ul.list li[display]{
+        background-color: red;
+        padding: 5px;
+        color: white;
+    } */
+    ul.list[class~="aligndata"]{
+
+        background-color: violet;
+        color: white;
+        padding: 5px;
+    }
+    ul.list li[mrnid="100"]{
+        background-color: greenyellow;
+        color: white;
+        padding: 5px;
+    }
+        ul.list li[mrnid="200"]{
+        background-color: greenyellow;
+        color: white;
+        padding: 5px;
+    }
+    ul.list li[class^="box-"]
+    {
+        background-color: blue;
+        color: aliceblue;
+        padding: 5px;
+    }
+    ul.list li[name*="simple"]{
+        border-bottom: 2px black solid;
+    }
+
+
+
+</style>
+<body>
+    <ul class="list">
+        <li class="aligndata">one</li>
+        <li class="box-mod1">two</li>
+        <li class="box-mod2">three</li>
+        <li name="datesimplediv">five</li>
+        <li class="aligndata end">four</li>
+        <li menid="100">six</li>
+        <li mrnid="200">seven</li>
+    </ul>
+</body>
+</html>

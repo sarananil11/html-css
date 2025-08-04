@@ -1,0 +1,59 @@
+.container{
+    border: 3px solid red;
+    height: 440px;
+    width: 370px;
+    margin:auto;
+    /* position: relative; */
+    
+}
+
+/* position properties are tried in div 1 */
+.div1{
+     height: 50px;
+    width: 50px;
+    background-color: yellow;
+    margin: 5px;
+    /* position: static;
+    top: 20px;
+    left: 20px; */
+
+    /* position: relative;
+    top: 20px;
+    left: 50px; */
+    
+    /* position: absolute;
+    top: 50px;
+    left: 100px; */
+/* 
+    position: fixed;
+    top: 20px;
+    left: 200px; */
+
+}
+
+.div2{
+        height: 50px;
+    width: 50px;
+    background-color: green;
+    margin: 5px;
+}
+.div3{
+        height: 50px;
+    width: 50px;
+    background-color: violet;
+    margin: 5px;
+}
+.div4{
+        height: 50px;
+    width: 50px;
+    background-color: blue;
+    margin: 5px;
+}
+
+
+/* sticky position is in h3 */
+
+h3{
+    position: sticky;
+    top: 0px;
+}

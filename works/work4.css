@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: white; 
+}
+.header{
+    font-size: 260%;
+    margin-left: 40px;
+}
+
+span{
+    color: rgb(168, 22, 64);
+}
+.right-elements{
+    display: flex;
+    color: white;
+    font-size: 160%;
+    gap: 70px;
+    margin-right: 80px;
+}
+.a1:hover{
+    color: red;
+}
+.a2:hover{
+    color: red;
+}
+.a3:hover{
+    color: red;
+}
+.a4:hover{
+    color: red;
+}
+.a5:hover{
+    color: red;
+}
+.a5{
+    background-color: black;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
+.a6:hover{
+    color: red;
+}
+.a6{
+        background-color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+.header-contents{
+    display: flex;
+    font-size: 160%;
+    gap: 70px;
+    justify-content: space-between;
+       
+}
+
+body{
+    background: url(../wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.body-heading{
+    
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 40px;
+    margin-top: 20%;
+    font-size: 150%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.button{
+    display: inline;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    width: 80px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

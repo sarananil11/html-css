@@ -1,0 +1,30 @@
+// LESS VARIABLES
+@primary-color: #2f77cf;
+@font-name: 'Segoe UI', sans-serif;
+@padding: 12px;
+@button-radius: 6px;
+@color: white;
+@body-color: black;
+// @button-radius: @padding / 2px;
+
+
+body {
+  font-family: @font-name;
+  background-color: lighten(@primary-color, 40%);
+  padding: @padding;
+  color: @body-color;
+}
+
+
+h1 {
+  color: @primary-color;
+}
+
+
+button {
+  background-color: @primary-color;
+  color: @color;
+  padding: @padding;
+  border: none;
+  border-radius: @button-radius;
+}

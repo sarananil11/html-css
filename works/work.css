@@ -1,0 +1,57 @@
+    .flex-container{
+        display: flex;
+        border: solid #942626;
+        border-radius: 20px;
+        background-color: rgb(23, 42, 164);
+        height: 40px;
+        font-size: 30px;
+        justify-content: space-between;
+        margin: 10px;
+        gap: 20px;
+
+    }
+    a{
+        margin: 10px;
+    }
+    .main-heading{
+        color: blue;
+    }
+    
+    .right{
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .car-images{
+        
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 20px;
+        
+        
+    }
+    .sub-heading{
+        margin: 10px 10px;
+        color: blue;
+    }
+
+    .about {
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        flex-direction: row;
+        gap: 20px;
+        width: 900px;
+        
+    }
+
+    .head{
+        color: black;
+        text-align: justify;
+        }
+
+    .root{
+        color: black;
+        text-align: justify;
+    }

@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+
+    margin: 10px;
+    font-size: 20px;
+    justify-content: space-between;
+    
+    
+    
+}
+.hoab{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+    
+}
+
+body{
+    background-image: url(https://4kwallpapers.com/images/wallpapers/max-verstappen-f1-1920x1200-13972.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.main-body{
+    margin-top: 300px;
+}
+.main-body h1{
+    color: white;
+    text-align: center;
+    
+}
+.main-body p{
+    color: wheat;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+.car-images{
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
